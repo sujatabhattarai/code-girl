@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--DOCTYPE html-->
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
@@ -12,14 +12,19 @@
       <a href=""> Home </a>
       <a href="#"> Events </a>
       <a href="register.html"> Register </a>
-      <a href="login.html" style="float:right;"> Sign In </a>
+      <% if logged_in? %>
+        <%= link_to 'Sign out', signout_path, method: :delete %>
+      <% else %>
+        <a href="signin" style="float:right;"> Sign In </a>
+        <a href="signup" style="float:right;"> Sign Up </a>
+      <% end %>
     </div>
   </header>
 </div>
 <div class="headline">
   <i>A seminar on </i><br/><big>Girls Can Code</big>
 </div>
-<img src="gcc.png">
+<%= image_tag("gcc.jpg") %>
 <div class="content">
   <p>
     The first person to code was a Girl. So, any girls can code and
