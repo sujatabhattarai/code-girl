@@ -3,6 +3,9 @@ class ApplicationController < ActionController::Base
  #to let rails know these are helper methods
  helper_method :current_user, :logged_in?
 
+ #default_protect_from_forgery with: :exception
+ include SessionsHelper
+
  def current_user
   @current_user ||= User.find(session[:user_id]) if session[:user_id]
  end

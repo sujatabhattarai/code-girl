@@ -11,8 +11,8 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                          password: "foobar",
                                          password_confirmation: "foobar"}}
     end
-    follow_redirect! #arranges to follow the redirect after submission
+    follow_redirect!
     assert_template 'users/show'
-    assert_not flash.FILL_IN
+    assert is_logged_in?
   end
 end

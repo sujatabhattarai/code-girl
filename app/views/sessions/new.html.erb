@@ -1,28 +1,22 @@
 
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="gcc.css">
-</head>
-<body>
-<!--form action=""-- >
-<%= form_for (@user) %>
-  <div class="user">
+
+<div class="user">
+  <%= form_for(:session, url: signin_path) do |f| %>
+
     <h1>Sign In</h1>
     <hr>
 
-    Email:
-    <input type="email" name="email">
-    <br><br>
-    Password:
-    <input type="password" name="psw" method="post"><br><br>
-    <input type="submit" value="Submit">
-  </div>
-</form>
+    <%= f.label :email %>
+    <%= f.email_field :email, class: 'form-control' %>
+
+    <%= f.label :password %>
+    <%= f.password_field :password, class: 'form-control' %>
+
+    <%= f.submit "Log in", class: "btn btn-primary" %>
+  <% end %>
+</div>
 <footer>
   <div class="back">
     <a href="/"><i>HomePage</i></a>|<a href="signup"><i>Register</i></a>
   </div>
 </footer>
-</body>
-</html>

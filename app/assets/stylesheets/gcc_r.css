@@ -2,8 +2,9 @@
 
 /* Add padding to containers */
 .container {
+    margin-top: 16px;
     padding: 16px;
-    background-color: #e1d7e2;
+   background-color: #e1d7e2;
 }
 
 /* Full-width input fields */

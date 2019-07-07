@@ -1,26 +1,4 @@
-<!--DOCTYPE html-->
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <title>GirlsCanCode</title>
-  <link rel="stylesheet" href="gcc.css">
-</head>
-<body>
-<div class="topic">
-  <header>
-    <div class="menu">
-      <a href=""> Home </a>
-      <a href="#"> Events </a>
-      <a href="register.html"> Register </a>
-      <% if logged_in? %>
-        <%= link_to 'Sign out', signout_path, method: :delete %>
-      <% else %>
-        <a href="signin" style="float:right;"> Sign In </a>
-        <a href="signup" style="float:right;"> Sign Up </a>
-      <% end %>
-    </div>
-  </header>
-</div>
+
 <div class="headline">
   <i>A seminar on </i><br/><big>Girls Can Code</big>
 </div>
