@@ -9,13 +9,31 @@
   <header>
     <div class="menu">
       <a href="/"> Home </a>
-      <a href="events/new"> Events </a>
-      <a href="register.html"> Register </a>
+      <%# if current_user.admin? %>
+<!--        <div class="dropdown">-->
+<!--          <button type="button" class="btn btn-primary dropdown-toggle"-->
+<!--                  data-toggle="dropdown">-->
+<!--            Events-->
+<!--          </button>-->
+<!--          <div class="dropdown-menu">-->
+<!--            <a class="dropdown-item" href="events/new", style="color: #730E15">Add event</a>-->
+<!--            <a class="dropdown-item" href="events/index", style="color: #730E15">All events</a>-->
+<!--          </div>-->
+<!--        </div>-->
+
+      <%# else %>
+        <%= link_to "Events", new_event_path %>
+      <%# end %>
+      <%= link_to "Register", signup_path %>
+      <%= link_to "Participants", users_path %>
       <% if logged_in? %>
-        <%= link_to 'Sign out', signout_path, method: :delete %>
+        <div class="name", style="float: right">
+          <%= current_user.first_name %>
+        </div>
+        <%= link_to 'Sign out', signout_path, method: :delete, style: "float:right;" %>
       <% else %>
-        <a href="signin" style="float:right;"> Sign In </a>
-        <a href="signup" style="float:right;"> Sign Up </a>
+        <%= link_to "Sign in", signin_path, style: "float: right;" %>
+        <%= link_to "Sign up", signup_path, style: "float: right;" %>
       <% end %>
     </div>
   </header>

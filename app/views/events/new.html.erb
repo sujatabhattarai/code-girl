@@ -1,1 +1,39 @@
-<h1>HI</h1>
+
+
+<head>
+  <title> Events form</title>
+ <link rel="stylesheet" href="gcc_r.css">
+</head>
+
+<div class="user">
+  <h1>Add event</h1>
+  <hr>
+
+  <%= form_for @event do |f|  %>
+  <%#= render 'shared/error_messages', object: @event %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :description %>
+    <br/>
+
+    <%= f.text_area :description, :rows=>4, :cols=>121 %>
+    <br/>
+
+
+    <%= f.label :venue %>
+    <br/>
+    <%= f.text_area :venue, :rows=>4, :cols=>121 %>
+
+
+
+    <br/><br/>
+    <%= f.label :DateTime %>
+    <br/>
+    <%= f.datetime_select :date_time %>
+
+    <hr>
+
+    <%= f.submit "Submit" %>
+  <% end %>
+</div>

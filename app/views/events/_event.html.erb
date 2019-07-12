@@ -1,0 +1,11 @@
+<li>
+  <%= link_to event.title, event %>
+  <%= event.description %>
+  <%= event.venue %>
+  <%= event.date_time %>
+
+  <% if logged_in? && current_user.admin? %>
+    | <%= link_to "delete", user, method: :delete,
+                                  date: {confirm: "Are you sure?"} %>
+  <% end %>
+</li>

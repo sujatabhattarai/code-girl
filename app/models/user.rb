@@ -1,7 +1,11 @@
 class User < ApplicationRecord
 
+  has_and_belongs_to_many :events
+
   #before_save :encrypt_password
   before_save {self.email = email.downcase}
+  before_save {self.first_name = first_name.capitalize}
+  before_save {self.last_name = last_name.capitalize}
   #after_save :clear_password
 
   #validating the attributes on users table
@@ -19,7 +23,7 @@ class User < ApplicationRecord
 
   has_secure_password
   validates :password, :confirmation => true, #password_confirmation attr
-            presence: true, length: { minimum: 6 }
+            presence: true, length: { minimum: 6 }, allow_nil: true
 
 
 

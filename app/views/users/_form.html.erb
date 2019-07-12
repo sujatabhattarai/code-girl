@@ -1,0 +1,39 @@
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="gcc_r.css">
+</head>
+
+<body>
+
+<div class="user">
+  <%= form_for(@user) do |f| %>
+    <%= render 'shared/error_messages', object: @user %>
+
+
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name, placeholder: "First name" %>
+
+
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name, placeholder: "Last name" %>
+
+
+      <%= f.label :email %>
+      <%= f.email_field :email, placeholder: "Your email address" %>
+
+
+      <%= f.label :password %>
+      <%= f.password_field :password, placeholder: "Enter Password" %>
+
+
+      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation, placeholder: "Re-enter password" %>
+
+      <hr>
+
+      <p>By creating an account you agree to our <a href=".">Terms & Privacy</a>.</p>
+      <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+
+  <% end %>
+</div>
