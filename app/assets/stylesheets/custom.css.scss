@@ -1,4 +1,4 @@
-@import "bootstrap-sprockets";
+//@import "bootstrap-sprockets";
 @import "bootstrap";
 
 #error_explanation {
@@ -79,4 +79,23 @@ h1 {
 .eventform {
 
 }
+
+
+td{
+  font-size: 1.3em;
+}
+
+th {
+  text-decoration: underline;
+}
+
+td, th {
+  border: none;
+  text-align: center;
+  padding: 8px;
+}
+
+
+
+
 

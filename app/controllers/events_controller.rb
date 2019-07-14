@@ -1,24 +1,22 @@
 class EventsController < ApplicationController
 
-  before_action :require_admin, only: :destroy
-
-  def new
-    @event = Event.new
-  end
+  before_action :require_admin, except: [:index, :show]
 
   def index
     @events = Event.paginate(page: params[:page], per_page: 5)
   end
 
+  def new
+    @event = Event.new
+  end
+
+
   def create
     @event = Event.new(event_params)
     if @event.save
-      flash[:notice] = "Event created successfully"
-      flash[:color]= "valid"
-      redirect_to @event
+      flash[:success] = "Event created successfully"
+      redirect_to events_path
     else
-      flash[:notice] = "Form is invalid"
-      flash[:color]= "invalid"
       render "new"
     end
   end
@@ -28,10 +26,12 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
   end
 
+
   def destroy
-    Event.find(params[:id]).destroy
-    flash[:success] = "Event deleted"
-    redirect_to events_url
+    @event= Event.find(params[:id])
+    @event.destroy
+    flash[:success] = "Event was successfully deleted"
+    redirect_to events_path
   end
 
   private
@@ -44,6 +44,9 @@ class EventsController < ApplicationController
       if !logged_in? || (logged_in? and !current_user.admin?)
         flash[:danger] = "Only admins can perform that action "
         redirect_to events_path
+      # else
+      #   render 'new'
       end
     end
+
 end

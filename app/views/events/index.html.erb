@@ -1,7 +1,19 @@
 <% provide(:title, 'All events') %>
-<h1>Events</h1>
+<h1 style="margin-bottom: 35px;">All Events:</h1>
 
 
-<ul class="users",>
-  <% render @events %>
-</ul>
+  <table style="width: 100%">
+    <tr>
+        <th><h3> Title </h3></th>
+        <th><h3>Venue</h3></th>
+        <th><h3>Date Time</h3></th>
+    </tr>
+    <%= render @events %>
+  </table>
+
+
+
+
+
+
+

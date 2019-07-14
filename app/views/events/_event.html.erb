@@ -1,11 +1,17 @@
-<li>
-  <%= link_to event.title, event %>
-  <%= event.description %>
-  <%= event.venue %>
-  <%= event.date_time %>
 
-  <% if logged_in? && current_user.admin? %>
-    | <%= link_to "delete", user, method: :delete,
-                                  date: {confirm: "Are you sure?"} %>
+  <tr>
+    <td><%= link_to event.title, event %> </td>
+<!--  <td><%#= event.description %></td>-->
+    <td><%= event.venue %></td>
+    <td><%= event.date_time %></td>
+
+   <% if logged_in? && current_user.admin? %>
+    <td>
+      <%= link_to "Delete", event_path(event), method: :delete,
+                  data:{confirm: "Are you sure?"} %>
+    </td>
   <% end %>
-</li>
+  </tr>
+</table>
+
+

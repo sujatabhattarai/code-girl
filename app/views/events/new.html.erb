@@ -9,8 +9,9 @@
   <h1>Add event</h1>
   <hr>
 
+  <%= render 'shared/error_messages', object: @event %>
   <%= form_for @event do |f|  %>
-  <%#= render 'shared/error_messages', object: @event %>
+
     <%= f.label :title %>
     <%= f.text_field :title %>
 
