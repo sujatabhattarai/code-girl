@@ -1,0 +1,37 @@
+
+<head>
+  <title> Events form</title>
+  <link rel="stylesheet" href="gcc_r.css">
+  <link rel="stylesheet" href="gcc.css">
+</head>
+
+<div class="user">
+  <%= render 'shared/error_messages', object: @event %>
+  <%= form_for @event do |f|  %>
+
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :description %>
+    <br/>
+
+    <%= f.text_area :description, :rows=>4, :cols=>121 %>
+    <br/>
+
+
+    <%= f.label :venue %>
+    <br/>
+    <%= f.text_area :venue, :rows=>4, :cols=>121 %>
+
+
+
+    <br/><br/>
+    <%= f.label :DateTime %>
+    <br/>
+    <%= f.datetime_select :date_time %>
+
+    <hr>
+
+    <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+  <% end %>
+</div>

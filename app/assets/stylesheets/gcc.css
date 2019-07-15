@@ -4,7 +4,7 @@
 }
 
 
-.menu a{
+.menu a, .dropdown a{
     display: inline-block;
     font-size: 20px;
     color: white;
@@ -71,6 +71,7 @@ input[type=submit]:hover {
     background-color: #e1d7e2;
     padding: 16px;
 }
+
 
 .back {
     text-align: center;

@@ -1,2 +1,12 @@
-<%= @event.title %>:
-<%= @event.description %>
+
+<div class="display">
+  <h2><%= @event.title %>:</h2>
+  <%= @event.description %>
+  <br><br>
+  <b>Venue: </b><%= @event.venue %>
+  <br>
+  <b>Date-Time: </b><%= @event.date_time %>
+</div>
+
+<hr>
+<%= link_to "All Events", events_path, style: "float: right;" %>

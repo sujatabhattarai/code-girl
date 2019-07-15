@@ -2,25 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="838e1d82-e358-48a7-94cf-5c3e2727600f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/amritpaudel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/events_controller_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/integration/create_events_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/event_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/events/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/events/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/gcc.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/gcc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/gcc_r.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/gcc_r.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/events_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/events_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/event.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/event.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/events/_event.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/events/_event.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/events/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/events/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/events/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/events/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_error_messages.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_error_messages.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/events/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/events/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -39,13 +34,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="462">
+              <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -53,17 +45,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/events/_event.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/event.rb">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gcc.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <state relative-caret-position="402">
+              <caret line="80" column="8" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gcc_r.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -71,68 +72,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="507">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
               <folding>
-                <marker date="1563073175000" expanded="true" signature="757:917" ph="..." />
+                <marker date="1563229557000" expanded="true" signature="759:919" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/controllers/events_controller_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/integration/create_events_test.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/events/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -145,8 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20190619140015_drop_installs.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190619220133_add_password_digest_to_users.rb" />
         <option value="$PROJECT_DIR$/app/views/users/signin.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20190630111237_add_index_to_users_email.rb" />
@@ -170,32 +112,34 @@
         <option value="$PROJECT_DIR$/app/views/users/_user.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20190710133306_add_admin_to_users.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190710173100_create_events_and_users.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/gcc.css" />
         <option value="$PROJECT_DIR$/app/views/pages/home.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/events/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/gcc_r.css" />
         <option value="$PROJECT_DIR$/test/models/event_test.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/test/helpers/test_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/events/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_error_messages.html.erb" />
         <option value="$PROJECT_DIR$/test/test_helper.rb" />
         <option value="$PROJECT_DIR$/test/controllers/events_controller_test.rb" />
         <option value="$PROJECT_DIR$/test/integration/create_events_test.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/events_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/event.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/events/_event.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/events/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/controllers/events_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/events/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/events/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/events/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/events/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/events/_event.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/events/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/gcc.css" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/gcc_r.css" />
       </list>
     </option>
   </component>
@@ -218,6 +162,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -348,8 +294,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -593,7 +537,8 @@
       <workItem from="1562610760571" duration="9511000" />
       <workItem from="1562698417628" duration="7707000" />
       <workItem from="1562785450441" duration="6826000" />
-      <workItem from="1562797317870" duration="24741000" />
+      <workItem from="1562797317870" duration="24916000" />
+      <workItem from="1563214314296" duration="10413000" />
     </task>
     <servers />
   </component>
@@ -606,18 +551,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110193000" />
+    <option name="totallyTimeSpent" value="120781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="650" y="40" width="790" height="771" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22459893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22994652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -652,16 +597,6 @@
     <SUITE FILE_PATH="coverage/codegirls@Run_test__EventsControllerTest___codegirls.rcov" NAME="Run test 'EventsControllerTest': codegirls Coverage Results" MODIFIED="1563055636514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="codegirls" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/sessions_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -708,21 +643,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190710173100_create_events_and_users.rb" />
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -734,20 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gcc.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-258">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gcc_r.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
@@ -824,30 +731,7 @@
     <entry file="file://$PROJECT_DIR$/test/helpers/.keep">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/helpers/test_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/helpers/test_helper.rb" />
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -859,20 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -925,34 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/controllers/events_controller_test.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/event.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -960,40 +802,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/_event.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+    <entry file="file://$PROJECT_DIR$/test/controllers/events_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <marker date="1563073175000" expanded="true" signature="757:917" ph="..." />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="210">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/events_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <marker date="1563229557000" expanded="true" signature="759:919" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/events/_event.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gcc.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="80" column="8" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/gcc_r.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
         </state>
       </provider>
     </entry>
