@@ -26,10 +26,10 @@
       <%= link_to "Events", events_path %>
 
       <%# end %>
-      <%= link_to "Register", signup_path %>
+      <%= link_to "Register", '/' %>
       <% if logged_in? %>
         <div class="name", style="float: right">
-          <%= current_user.first_name %>
+          <%= link_to current_user.first_name, user_path(current_user) %>
         </div>
            <%= link_to 'Sign out', signout_path, method: :delete, style: "float:right;" %>
       <% else %>

@@ -18,5 +18,6 @@ Rails.application.routes.draw do
   post 'signin', to: 'sessions#create'
   delete 'signout', to: 'sessions#destroy'
 
+  resources :sessions, only: [:show]
 
 end

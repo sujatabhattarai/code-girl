@@ -1,16 +1,19 @@
 
-  <tr>
-    <td><%= link_to event.title, event %> </td>
-    <td><%= event.venue %></td>
-    <td><%= event.date_time %></td>
+<tr>
+  <td><%= link_to event.title, event %> </td>
+  <td><%= event.venue %></td>
+  <td><%= event.date_time %></td>
 
 
-
-   <% if logged_in? && current_user.admin? %>
-      <td><%= link_to "Edit", edit_event_path(event) %></td>
-      <td><%= link_to "Delete", event_path(event), method: :delete,
-                      data:{confirm: "Are you sure?"} %></td>
+  <% if logged_in? %>
+    <td><input type="checkbox" name="register" value="1"> Register</td>
   <% end %>
-  </tr>
+
+  <% if  logged_in? && current_user.admin? %>
+    <td><%= link_to "Edit", edit_event_path(event) %></td>
+    <td><%= link_to "Delete", event_path(event), method: :delete,
+                    data:{confirm: "Are you sure?"} %></td>
+  <% end %>
+</tr>
 
 
