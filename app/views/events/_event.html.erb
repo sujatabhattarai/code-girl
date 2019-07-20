@@ -6,7 +6,13 @@
 
 
   <% if logged_in? %>
-    <td><input type="checkbox" name="register" value="1"> Register</td>
+    <td>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" name="register" id="register" class="form-check-input" value="jjkjkjl"> Register
+        </label>
+      </div>
+    </td>
   <% end %>
 
   <% if  logged_in? && current_user.admin? %>
@@ -14,6 +20,8 @@
     <td><%= link_to "Delete", event_path(event), method: :delete,
                     data:{confirm: "Are you sure?"} %></td>
   <% end %>
+
 </tr>
+
 
 

@@ -13,6 +13,9 @@ Rails.application.routes.draw do
   post '/signup', to: 'users#create'
   resources :users
 
+
+  get '/abcd', to: 'users#mycheckbox'
+
   #render sessions#new as signin
   get 'signin', to: 'sessions#new'
   post 'signin', to: 'sessions#create'

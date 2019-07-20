@@ -13,8 +13,10 @@
     <%= render 'layouts/header' %>
     <div class="container">
       <% flash.each do |key, value| %>
-        <div class="alert alert-<%= key %>"><%= value %></div>
-
+        <div class='alert alert-<%="#{key}" %>'>
+          <a href="#" class="close" data-dismiss="alert">×</a>
+          <%= content_tag :div, value, :id => "flash_#{key}" if value.is_a?(String) %>
+        </div>
       <% end %>
       <%= yield %>
     </div>

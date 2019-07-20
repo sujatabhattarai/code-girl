@@ -1,3 +1,4 @@
+<div class="container" style="padding: 30px;">
 <pre>
   <%= @user.first_name %> <%= @user.last_name %>
 
@@ -8,6 +9,11 @@
   Time: <%= Time.now %>
 </pre>
 
-<%= link_to "Register", events_path %>
+</div>
+<div>
+  Events: <%=@events.first.title %>
+</div>
 
-<%= link_to "All participants", users_path %>
+<div style="float: right; padding-bottom: 10px;">
+  <%= link_to "Register", events_path %> | <%= link_to "All participants", users_path %>
+</div>

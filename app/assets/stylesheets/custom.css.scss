@@ -100,13 +100,12 @@ td, th {
 }
 
 /* for submit button in register page */
-//.actionButton {
-//  position:fixed;
-//  bottom:25px;
-//  left:0;
-//  right:0;
-//  //height:10px;
-//}
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 25px 50px;
+  //align-items: center;
+}
 
 #container {
   height: 100%;
