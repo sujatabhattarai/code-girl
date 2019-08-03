@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-
+  protect_from_forgery
  #to let rails know these are helper methods
  helper_method :current_user, :logged_in?
 

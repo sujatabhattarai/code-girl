@@ -10,6 +10,8 @@ module SessionsHelper
     if session[:user_id]
       @current_user ||= User.find_by(id: session[:user_id])
     end
+    require 'pry'
+    binding.pry
   end
 
   # Returns true if the user is logged in, false otherwise.

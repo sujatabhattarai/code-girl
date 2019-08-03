@@ -14,11 +14,18 @@
   </table>
 
 
-  <div>
-    <form action='/abcd' method="post" name="evt" id="evt">
-      <input type="submit" class="btn btn-primary" value="Submit">
-    </form>
-  </div>
+
+<!--  <div>-->
+
+
+      <%# if  logged_in? && current_user.admin? %>
+      <%#= form_for(:user, url: user_path(id: current_user)) do |f| %>
+<!--        <input type="submit" class="btn btn-primary" value="Submit">-->
+      <%# end %>
+    <%# end %>
+<!--  </div>-->
+
+  <%# end %>
 <!--  <div class="button">-->
     <%# if logged_in? %>
 <!--      <input type="button" class="btn btn-primary" value="Submit1">-->

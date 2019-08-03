@@ -14,13 +14,17 @@ Rails.application.routes.draw do
   resources :users
 
 
-  get '/abcd', to: 'users#mycheckbox'
 
   #render sessions#new as signin
   get 'signin', to: 'sessions#new'
   post 'signin', to: 'sessions#create'
   delete 'signout', to: 'sessions#destroy'
 
+  get 'register', to: 'user_events#new'
+  post 'register', to: 'user_events#create'
+
   resources :sessions, only: [:show]
+
+   resources :user_events #only: [:index, :destroy]
 
 end

@@ -23,8 +23,8 @@ class UsersController < ApplicationController
 
   def show
      @user = User.find(params[:id])
-     @events = @user.events
-    # @user = User.find(params.require(:user).permit(:id, event_ids[]))
+     #@user.events = UserEvent.find(params[:id])
+
   end
 
 
@@ -44,11 +44,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def mycheckbox
-    require 'pry'
-    binding.pry
-    a= b
-  end
 
   private
 

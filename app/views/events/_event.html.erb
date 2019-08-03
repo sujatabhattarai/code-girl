@@ -4,22 +4,18 @@
   <td><%= event.venue %></td>
   <td><%= event.date_time %></td>
 
-
-  <% if logged_in? %>
-    <td>
-      <div class="form-check">
-        <label class="form-check-label">
-          <input type="checkbox" name="register" id="register" class="form-check-input" value="jjkjkjl"> Register
-        </label>
-      </div>
-    </td>
-  <% end %>
-
   <% if  logged_in? && current_user.admin? %>
     <td><%= link_to "Edit", edit_event_path(event) %></td>
     <td><%= link_to "Delete", event_path(event), method: :delete,
                     data:{confirm: "Are you sure?"} %></td>
+<!--    <td>-->
+<!--      <form method="post" id="register">-->
+<!--        <input type="checkbox" name = "reg" value="<%#= event.id %>"> Register-->
+<!--      </form>-->
+<!--    </td>-->
   <% end %>
+
+
 
 </tr>
 

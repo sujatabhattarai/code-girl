@@ -27,5 +27,4 @@ class User < ApplicationRecord
             presence: true, length: { minimum: 6 }, allow_nil: true
 
 
-
- end
+end
