@@ -21,4 +21,18 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def require_admin
+    if !logged_in? || (logged_in? and !current_user.admin?)
+      flash[:danger] = "Only admins can perform that action "
+      redirect_to root_path
+    end
+  end
+
+  def signed_in_user
+    unless logged_in?
+      flash[:danger] = "You must be signed in to perform that action. Please Sign In."
+      redirect_to signin_url
+    end
+  end
+
 end

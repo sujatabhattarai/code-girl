@@ -1,38 +1,34 @@
 <div class="container" style="padding: 30px;">
-<pre>
-  <%= @user.first_name %> <%= @user.last_name %>
+  <pre>
+    <%= @user.first_name %> <%= @user.last_name %>
 
-  <%= @user.email %>
+    <%= @user.email %>
 
-  Created_at: <%= @user.created_at %>
-  Updated_at: <%= @user.updated_at %>
-  Time: <%= Time.now %>
-</pre>
-
-</div>
-<div>
-<!--  Events: <%# @user_events.event_id %> <%#= Event.find_by(id: @user_events.event_id).title %>-->
+    Created_at: <%= @user.created_at %>
+    Updated_at: <%= @user.updated_at %>
+    Time: <%= Time.now %>
+  </pre>
 </div>
 
-<%# if @user.events.any? %>
-  <%#= render @user.events %>
-<%# end %>
-<%  %>
-<h3> Registered Events</h3>
+
+<% if @user.events.any? %>
+  <h3> Registered Events</h3>
+<% else %>
+  <p><i>Register for the events.</i></p>
+<% end %>
 
 <ol>
-<% for user_event in @user.events.all %>
+<% @user.events.all.each do |userevent| %>
     <table>
       <tr>
-        <td><li><p><%= link_to user_event.title, user_event %></p></li></td>
-        <% id = UserEvent.find_by(user_id: current_user, event_id: user_event.id).id %>
+        <td><li><p><%= link_to userevent.title, userevent %></p></li></td>
+        <% id = UserEvent.find_by(user_id: current_user, event_id: userevent).id %>
        <td><%= link_to "Unregister", user_event_path(id), method: :delete,
                 data:{confirm: "Are you sure?"}%></td>
       </tr>
     </table>
 <% end %>
 </ol>
-
 
 <br/>
 

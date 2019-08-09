@@ -1,4 +1,3 @@
-
 <tr>
   <td><%= link_to event.title, event %> </td>
   <td><%= event.venue %></td>
@@ -8,15 +7,7 @@
     <td><%= link_to "Edit", edit_event_path(event) %></td>
     <td><%= link_to "Delete", event_path(event), method: :delete,
                     data:{confirm: "Are you sure?"} %></td>
-<!--    <td>-->
-<!--      <form method="post" id="register">-->
-<!--        <input type="checkbox" name = "reg" value="<%#= event.id %>"> Register-->
-<!--      </form>-->
-<!--    </td>-->
   <% end %>
-
-
-
 </tr>
 
 

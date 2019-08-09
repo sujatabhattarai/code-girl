@@ -1,17 +1,27 @@
 class UserEventsController < ApplicationController
 
+  before_action :signed_in_user, only: [ :new]
+  before_action :require_admin, only: [:index]
+
   def new
     @user_event = UserEvent.new
   end
 
   def create
-    # debugger
-    @user_event = UserEvent.new(user_id: params[:userId], event_id: params[:reg])
-    # @user_event = UserEvent.new(params.require(:user_event).permit(:userId, :reg))
-    if @user_event.save
-      render 'index'
+    if params[:event_ids].nil?
+      flash[:danger] = "Please select an event to register"
+      redirect_to register_path
     else
-      flash[:dnager] = "Not SAVED"
+      params[:event_ids].each do |event|
+        @user_event = UserEvent.new(user_id: params[:userId], event_id: event)
+        if @user_event.save
+          flash[:success] = "You have registered successfully"
+        else
+          flash[:danger] = "Not Saved"
+          render 'users/show'
+        end
+      end
+      redirect_to user_path(params[:userId])
     end
   end
 
@@ -27,15 +37,6 @@ class UserEventsController < ApplicationController
     @user_event= UserEvent.find(params[:id])
     @user_event.destroy
     flash[:success] = "You have successfully unregistered from the event"
-    redirect_to user_events_path
-  end
-
-
-private
-  def signed_in_user
-    unless logged_in?
-      flash[:danger] = "Request denied. Please sign in. "
-      redirect_to signin_url
-    end
+    redirect_to user_path(current_user)
   end
 end

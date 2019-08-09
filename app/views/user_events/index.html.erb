@@ -1,8 +1,22 @@
-<% for user_event in UserEvent.all %>
-  id: <%= id = user_event.id %>
-  user_id <%= user_event.user_id %>
-  event_id <%= user_event.event_id %>
-  <%= link_to "Delete", user_event_path(id), method: :delete,
-              data:{confirm: "Are you sure?"} %>
-  <br/>
-<% end %>
+<h1>USER_EVENTS:</h1>
+
+<table style="width: 100%; border: #222222;">
+  <tr>
+    <th><h3>Id</h3></th>
+    <th><h3>User_id</h3></th>
+    <th><h3>Event_id</h3></th>
+  </tr>
+
+    <% UserEvent.all.each do |user_event| %>
+
+    <tr>
+      <td><%= id = user_event.id %></td>
+      <td><%= user_event.user_id %></td>
+      <td><%= user_event.event_id %></td>
+      <td><%= link_to "Delete", user_event_path(id), method: :delete,
+                      data:{confirm: "Are you sure?"} %></td>
+    </tr>
+    <br/>
+    <% end %>
+</table>
+

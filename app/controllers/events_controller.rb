@@ -53,14 +53,4 @@ class EventsController < ApplicationController
     def event_params
       params.require(:event).permit(:title, :description, :venue, :date_time)
     end
-
-    def require_admin
-      if !logged_in? || (logged_in? and !current_user.admin?)
-        flash[:danger] = "Only admins can perform that action "
-        redirect_to events_path
-      # else
-      #   render 'new'
-      end
-    end
-
 end

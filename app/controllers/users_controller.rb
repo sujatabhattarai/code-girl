@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
   before_action :signed_in_user, only: [:edit, :update]
   before_action :valid_user, only: [:edit, :update]
+  before_action :require_admin, only: [:index]
 
   def new
     @user = User.new
@@ -23,8 +24,6 @@ class UsersController < ApplicationController
 
   def show
      @user = User.find(params[:id])
-     #@user.events = UserEvent.find(params[:id])
-
   end
 
 
@@ -51,12 +50,6 @@ class UsersController < ApplicationController
       params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
     end
 
-    def signed_in_user
-      unless logged_in?
-        flash[:danger] = "Request denied. Please sign in. "
-        redirect_to signin_url
-      end
-    end
 
     def valid_user
       @user = User.find(params[:id])
